@@ -20,6 +20,7 @@
         body{
 
           background:url("https://img.freepik.com/premium-photo/white-grid-line-pattern-gray-background_53876-149707.jpg");
+        
           background-size: cover;
           /* background-repeat: no-repeat; */
           background-position: center;
@@ -32,7 +33,6 @@
     <nav class="container">        
         <div class="navbar">
           <div class="logo-container">
-            <!-- <h2>Anuj</h2> -->
             <img src="other_image/logo.png" class="logo" />
           </div>
 
@@ -51,10 +51,11 @@
 
 
 
-
+ <!------------ HERO SECTION CODING ------------->
 
       <section class="hero-section" id="home">
         <div class="faded-text">Anuj</div>
+        <div class="hero_container">
          <div class="hero-section-left">
           <div class="hero-section-heading">Hi! Anuj Kumar Singh</div>
           <div class="hero-section-heading hero-section-subheading">
@@ -64,9 +65,15 @@
             I'm a frontend developer and here is my portfolio website. Here
             you'll learn about my journey as a software developer.
           </div>
-          <a href="other_image/myResume.pdf" class="download_button" target="_blank">
-            <button class="btn-pink" id="btn">Download Resume</button>
-          </a>
+          <div class="button_link">
+            <a href="other_image/myResume.pdf" class="download_button" target="_blank">
+              <button class="btn-pink" id="btn">Download Resume</button>
+            </a>
+            <a href="https://github.com/Anujsingh7" target="_blank">
+               <i title="GitHubLink" style="background: #E84949;"  class="fa-brands fa-github icon"></i>
+            </a>
+          </div>
+          
         </div>
 
         <div class="hero-section-right">
@@ -74,6 +81,7 @@
             <img src="other_image/profile.jpeg" alt="" />
           </div>
         </div>
+      </div>
       </section>
     
 
@@ -81,7 +89,8 @@
       <!-- PROJECTS SECTION CODING -->
 
       <div class="project-section" id="projects">
-        <h2 class="page-header">Projects</h2>
+          <h2 class="page-header">Projects</h2>
+       
         <div class="project-container">
           <!-- Project No 1 -->
 
@@ -225,7 +234,7 @@
 
        <!-- Skill Section Start  -->
 
-       <div id="skills" class="skills-container">
+       <section id="skills" class="skills-container">
         <div class="skill-fade-text">SKills</div>
         <div class="skill-container-left">
           <h2 class="skill-heading">My Techenical Skills</h2>
@@ -275,14 +284,14 @@
           <img src="other_image/Vercel.svg" alt="" class="skill-logo" />
           <img src="other_image/firebase.png" alt="" class="skill-logo" />
         </div>
-      </div>
+       </section>
 
     
 
       <!-- Coding profile Section Start  -->
 
       <section class="profile_container" id="codingProfile">
-        <div class="profile_heading"><h2>Coding Profile</h2></div>
+        <div class="profile_heading"><h2>Coding Profiles</h2></div>
 
         <div class="coding_profile">
           <div class="profile">
@@ -443,6 +452,28 @@
           backSpeed: 80,
           backDelay: 1000,
         });
+
+
+
+        // navbar coding
+
+        const menu=document.querySelector(".nav-items")
+        const menuBtn=document.querySelector("#open-menu-btn")
+        const closeBtn=document.querySelector("#close-menu-btn")
+        menuBtn.addEventListener('click',()=>{
+        menu.style.display='flex'
+        closeBtn.style.display="inline-block"
+        menuBtn.style.display="none"
+         })
+
+         //close nav menu
+        const closeNav =()=>{
+          menu.style.display='none'
+          closeBtn.style.display='none';
+          menuBtn.style.display="inline-block"
+        }
+        
+        closeBtn.addEventListener('click',closeNav)
       </script>
 
 </body>
