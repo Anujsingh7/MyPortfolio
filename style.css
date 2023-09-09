@@ -398,26 +398,26 @@ nav button {
 }
 
 #project1 {
-  background-image: url(Projects/Project1.png);
+  background-image: url(projects/project1.png);
   background-size: cover;
   background-position: center;
 }
 
 #project2 {
-  background-image: url(Projects/Project2.png);
+  background-image: url(projects/project2.png);
   margin-left: 7.5rem;
   background-size: cover;
   background-position: center;
 }
 
 #project3 {
-  background-image: url(Projects/Project3.png);
+  background-image: url(projects/project3.png);
   background-size: cover;
   background-position: center;
 }
 
 #project4 {
-  background-image: url(Projects/Project4.png);
+  background-image: url(projects/project4.png);
   margin-left: 7.5rem;
   background-size: cover;
   background-position: center;
